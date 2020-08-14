@@ -1,0 +1,27 @@
+/* body {
+    background-color: #1D1E2B
+} */
+
+.bg {
+    background-color: #013A6B;
+    background-image: -webkit-linear-gradient(95deg, #2A2B35 50%, #1D1E2B 50%);
+    min-height: 1200px;
+}
+
+h1,
+h2 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.landIllustration {
+    position: absolute;
+    left: 15%;
+    top: 160px;
+}
+
+.landText {
+    position: absolute;
+    right: 15%;
+    top: 240px;
+}
