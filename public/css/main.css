@@ -27,14 +27,14 @@ h2 {
     .landIllustration {
         height: 280px;
         position: absolute;
-        left: 30%;
-        right: 30%;
+        left: 25%;
+        right: 25%;
         top: 140px;
     }
 
     .landText {
         position: absolute;
-        left: 30%;
+        left: 25%;
         top: 450px;
     }
 
@@ -45,7 +45,7 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .landIllustration {
         height: 200px;
         position: absolute;
