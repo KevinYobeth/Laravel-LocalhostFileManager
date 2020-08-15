@@ -1,9 +1,5 @@
-/* body {
-    background-color: #1D1E2B
-} */
-
 .bg {
-    background-color: #013A6B;
+    background-color: #ffffff;
     background-image: -webkit-linear-gradient(95deg, #2A2B35 50%, #1D1E2B 50%);
     min-height: 1200px;
 }
@@ -15,6 +11,7 @@ h2 {
 }
 
 .landIllustration {
+    height: 360px;
     position: absolute;
     left: 15%;
     top: 160px;
@@ -23,5 +20,50 @@ h2 {
 .landText {
     position: absolute;
     right: 15%;
-    top: 240px;
+    top: 220px;
+}
+
+@media only screen and (max-width: 900px) {
+    .landIllustration {
+        height: 280px;
+        position: absolute;
+        left: 30%;
+        right: 30%;
+        top: 140px;
+    }
+
+    .landText {
+        position: absolute;
+        left: 30%;
+        top: 450px;
+    }
+
+    .bg {
+        background-color: #ffffff;
+        background-image: -webkit-linear-gradient(95deg, #2A2B35 50%, #1D1E2B 50%);
+        min-height: 1600px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .landIllustration {
+        height: 200px;
+        position: absolute;
+        left: 15%;
+        right: 15%;
+        top: 140px;
+    }
+
+    .landText {
+        position: absolute;
+        right: 15%;
+        left: 15%;
+        top: 400px;
+    }
+
+    .bg {
+        background-color: #ffffff;
+        background-image: -webkit-linear-gradient(95deg, #2A2B35 50%, #1D1E2B 50%);
+        min-height: 1600px;
+    }
 }
