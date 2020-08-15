@@ -23,14 +23,11 @@
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 </head>
 
-<body class="bg">
+<body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                {{-- <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Laravel') }}
-                </a> --}}
-                <a href="/">
+                <a href="./">
                     <img class="navbar-brand" src="img/darkLogo.svg" height="60" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -84,9 +81,9 @@
             </div>
         </nav>
 
-        <main class="py-4">
+
             @yield('content')
-        </main>
+
     </div>
 </body>
 
