@@ -28,8 +28,9 @@ h2 {
     top: 220px;
 }
 
-.itemText {
+.itemText a {
     color: white;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 900px) {

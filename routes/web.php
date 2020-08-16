@@ -20,4 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/storage', 'StorageController@index')->name('storage')->middleware('auth');
+Route::get('/storage/{id}', 'StorageController@show')->middleware('auth');
+Route::get('/storage', 'StorageController@index')->middleware('auth');
+Route::get('/storage/{id}/dl', 'StorageController@download')->middleware('auth');
