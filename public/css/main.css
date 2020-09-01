@@ -28,11 +28,6 @@ h2 {
     top: 220px;
 }
 
-.itemText a {
-    color: white;
-    text-decoration: none;
-}
-
 @media only screen and (max-width: 900px) {
     .landIllustration {
         height: 280px;
