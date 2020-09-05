@@ -38,19 +38,24 @@ class StorageController extends Controller
     {
         $basenameArray = array();
         $extensionArray = array();
+        $sizeArray = array();
 
         $filesInFolder = \File::files('../../video');
         foreach ($filesInFolder as $path) {
             $file = pathinfo($path);
+            $fileSizes = \File::size(public_path($path));
+
+            $sizeArray = Arr::prepend($sizeArray, $fileSizes);
             $basenameArray = Arr::prepend($basenameArray, $file['basename']);
             $extensionArray = Arr::prepend($extensionArray, $file['extension']);
             // error_log($file['basename']);
             // error_log($file['extension']);
         }
 
-        $data = $basenameArray[$id];
+        $fileName = $basenameArray[$id];
+        $fileSize = $sizeArray[$id];
 
-        return view('detail', ['data' => $data, 'id' => $id]);
+        return view('detail', ['fileName' => $fileName, 'id' => $id, 'fileSize' => $fileSize]);
     }
 
     public function download($id)
